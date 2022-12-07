@@ -1,0 +1,13 @@
+/* Contact Style */
+
+.fa-phone-alt{
+    color: yellow;
+
+}
+.Card{
+    transition: 0.5s;
+}
+.Card:hover{
+    color: yellow;
+
+}
