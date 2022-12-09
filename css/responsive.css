@@ -76,17 +76,22 @@
   .Techcont{
       display: flex;
       flex-direction: column;
+      width: 100% !important;
   }
   .Technology{
-
-    height: 2100px  !important;
+    height: 1750px  !important;
     margin-bottom: 0px;
-    
-    height: 300px;
     gap: -10px !important;
+    
 }
 
 @media (max-width:992px) {
+    
+
+    .MainSide{
+        height: 1750px !important;
+        width: 100% !important;
+    }
     .top-footer,
     .footer-btns {
         text-align: center;

@@ -543,9 +543,8 @@
 
 .Techcont{
   width: 70%;
-  height: 500px ;
+  height: 600px  ;
   margin: auto;
- 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -590,8 +589,9 @@
   background-position: center;
   background-repeat: no-repeat;
     background-size: cover;
-    height: 900px !important;
+   height: 750px !important;
     margin-bottom: 0px;
+  
 
 
 }
@@ -602,7 +602,7 @@
   display: inline-block;
   justify-content: center;
   align-items: center;
-  margin: 100px 0;
+  margin: 20px 0;
   border-radius: 8px 8px 0 0 ;
   background-color: #333;
   gap: 5px;
