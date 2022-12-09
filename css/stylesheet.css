@@ -287,12 +287,24 @@
     margin-top: 5rem !important;
 
   }
+  .shapebg{
+    width: 70% !important;
+    margin: auto !important;
+    margin-bottom: 5rem !important;
+   
+   
+   
+
+  }
+
+
   .sideheader{
-    width: 50%;
+    width: 100%;
     margin: auto;
 
     
   }
+
   .sideheader>h3{
     /* padding: 10px 0 ; */
      font-family: 'Open Sans', sans-serif !important;
@@ -303,7 +315,7 @@
   }
 
   .sideheader>p{
-    width: 50%;
+    width: 100%;
     font-family: 'Open Sans', sans-serif !important;
     font-size: 20px;
     line-height: 2;
@@ -315,6 +327,11 @@
         
 
   }
+  .homeheader{
+    width: 80% !important;
+  }
+
+  
   
  
 
@@ -324,9 +341,9 @@
     
     min-width: 50% ;
     height: 500px;  
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: 2px solid #307439;
-    display: none;
+   
   
 }
 
@@ -423,7 +440,8 @@
 }
 
 .headeritem>h1{
-    padding: 30px 0 ;
+    padding: 10px 0 ;
+    font-size: 30px !important;
 }
 .itemlist{
     margin: 30px;
@@ -470,9 +488,7 @@
   background-color: #499b49 !important;
 }
 
-.mb-0{
-  background-color: ;
-}
+
 
 .collapsed{
   text-decoration: none;
@@ -723,6 +739,145 @@
 .blogbtn{
   margin-top: 30px !important;
 }
+
+
+/* SECOND NEW HEADER */
+.padding{
+  padding-bottom: 10px !important;
+}
+.newscont{
+  width: 70% !important;
+}
+.pt-80 {
+  padding-top:70px;
+}
+.pb-120 {
+  padding-bottom:120px;
+}
+.gray-bg {
+	background: #fefbfb;
+  border-radius: 8px;
+}
+.f-left {
+  float:left;
+}
+.f-right {
+  float:right;
+}
+.blog-wrapper {
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  transition: 0.3s;
+}
+.blog-wrapper:hover {
+  border: 1px solid transparent;
+  background: #fff;
+}
+.blog-inner {
+  overflow: hidden;
+}
+.tag-blog > a {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  padding: 6px 20px;
+  border-radius: 30px;
+  background-color: #499b49;
+  display: inline-block;
+}
+.blog-inner h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.blog-inner p {
+  line-height: 30px;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.blog-meta {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 25px;
+}
+.blog-meta span {
+  color: #646464;
+}
+.blog-meta span a {
+  color: #333;
+  font-size: 11px;
+}
+.blog-more {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 13px;
+  color: #499b49;
+  text-transform: uppercase;
+}
+.blog-more-btn {
+  transform: translateX(40px);
+  transition: 0.3s;
+   color: #499b49;
+}
+.f-left{
+  color: #499b49 !important;
+
+
+}
+.blog-wrapper:hover .blog-more-btn {
+  transform: translateX(0px);
+}
+.custom-row {
+  margin: 0 -15px;
+}
+.dot-style .slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: -60px;
+}
+.dot-style .slick-dots > li {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 0;
+}
+.dot-style .slick-dots > li.slick-active button {
+  background: #adadb0;
+}
+.dot-style .slick-dots button {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 2px solid #adadb0;
+  text-indent: -10000px;
+  padding: 0;
+}
+.fasblog {
+  color: #499b49 !important;
+  font-size: 15px;
+ 
+}
+.fasblog:hover{
+   color:#EEC344 !important;
+
+
+}
+.blog-more{
+  color: #499b49 !important;
+  font-size: 14px;
+
+}
+.blog-more:hover{
+  color:#EEC344 !important;
+  font-size: 14px;
+}
+
+
+
 
 /* BLOG NEWS END */
 
@@ -2078,7 +2233,7 @@
   /*====================================================
     13. FAQ. 
   ====================================================*/
-  .accordion {
+  /* .accordion {
     border-top: 1px solid #d9e5e8;
   }
 
@@ -2202,7 +2357,7 @@
   .layer-title p.strong {
     font-weight: 600;
     font-size: 15px;
-  }
+  } */
 
   /*====================================================
     14. 404 ERROR PAGE. 
@@ -5436,6 +5591,7 @@ section.pricing-plans {
   .home-about-alt .counter-inner-box {
     margin: 0px;
     margin-right: 15px;
+    margin-top: 30px  !important;
   }
 
   .home-about-alt .media-body p {
