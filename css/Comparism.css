@@ -1,0 +1,287 @@
+body{
+    margin-top:20px;
+    background-color: #eeeeee;
+}
+
+.header-title-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #008D40 !important;
+    border-radius: 7px 7px 0 0;
+    padding: 0;
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+    padding: 40px;
+    background-color: #ffffff;
+  
+}
+.bg-color{
+    background-color: forestgreen;
+}
+
+.header-title h1{
+    color: #05b050;
+    /* text-transform: uppercase; */
+    Font-family: 'Radio Canada', sans-serif;
+    font-weight: 700;
+    Line-height: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.comparison-item h1{
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    Line-height: 27px;
+    text-align: center;
+    color: #616161;
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.comparison-item h1{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.comparison-tab{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+.comparison-table {
+    width: 100%;
+    font-size: .875rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
+.comparison-table table {
+    /* min-width: 41rem; */
+    table-layout: auto;
+}
+
+.comparison-table table tbody+tbody {
+    border-top-width: 1px
+}
+
+.comparison-table .table-bordered thead td {
+    border-bottom-width: 1px
+}
+
+.comparison-table .comparison-item {
+    position: relative;
+    padding: .875rem .75rem 1.125rem;
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    text-align: center
+}
+
+/* .comparison-table .comparison-item .comparison-item-thumb {
+    display: block;
+    width: 5rem;
+    margin-right: auto;
+    margin-bottom: .75rem;
+    margin-left: auto
+} */
+
+/* .comparison-table .comparison-item .comparison-item-thumb>img {
+    display: block;
+    width: 100%
+} */
+
+/* .comparison-table .comparison-item .comparison-item-title {
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none
+} */
+
+/* .comparison-table .comparison-item .comparison-item-title:hover {
+    text-decoration: underline
+} */
+
+/* .comparison-table .comparison-item .btn {
+    margin: 0
+} */
+
+.comparison-table .comparison-item .remove-item {
+    display: block;
+    position: absolute;
+    top: -.3125rem;
+    right: -.3125rem;
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 50%;
+    background-color: #f44336;
+    color: #fff;
+    text-align: center;
+    cursor: pointer
+}
+
+/* .comparison-table .comparison-item .remove-item .feather {
+    width: .875rem;
+    height: .875rem
+} */
+.table-bordered th, .table-bordered td {
+    border: 1px solid #e7e7e7;
+}
+.bg-secondary {
+    background-color: #f7f7f7 !important;
+}
+
+.th-td-style, label{
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    Line-height: 27px;
+    text-align: left;
+    color: #616161;
+}
+
+.input-check{
+    width: 27px;
+    height: 27px;
+    font-weight: 700;
+    color: #383737;
+}
+
+
+.hidden-content{
+    display: none;
+}
+
+.hidden-content.reveal-btn{
+    display: block;
+}
+
+
+.compare{
+  width: 80% !important;
+  margin: auto;
+}
+.centerbtn{
+ text-align: center;
+ margin-bottom: 70px;
+  
+}
+#paddingbtn{
+    margin-bottom: 50px;
+}
+.sustain-texth5{
+     color: #383737 !important;
+
+}
+.sustain-text{
+    line-height: 1.9;
+    color: #383737;
+    font-size: 15px;
+}
+
+.choices__item{
+    background-color: #499b49 !important;
+    color: #ffffff;
+    font-family: 'Radio Canada', sans-serif !important;
+    font-size: 18px !important;
+   
+}
+.choices__item:hover{
+    background-color: #EEC344 !important;
+    color: #ffffff;
+    font-family: 'Radio Canada', sans-serif !important;
+    font-size: 18px !important;
+}
+
+
+
+
+@media screen and (max-width: 990px) {
+    .header-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 20px 0;
+        padding: 30px 0 30px 0;
+        background-color: #ffffff;
+      
+    }
+    
+    
+    .header-title h1{
+        display: inline;
+        color: #05b050;
+        /* text-transform: uppercase; */
+        Font-family: 'Radio Canada', sans-serif;
+        font-weight: 700;
+        Line-height: 40px;
+        text-align: center;
+        font-size: 25px;
+        /* width: 260px;
+        height: 120px; */
+        /* padding: 20px; */
+        
+    }
+    .comparison-tab{
+        display: block; 
+        max-width: 990px;
+        width: 100%;
+    }
+
+    #compare-criteria{
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        max-width: 990px;
+        height: 40px;
+        border: 1px solid #616161;
+        border-radius: 10px;
+    }
+
+    .small{
+        width: fit-content;
+    }
+
+    /* .comparison-item{
+        width: 100px
+    } */
+
+    .comparison-item h1{
+        font-family: 'Radio Canada', sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        color: #616161;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* .comparison-table {
+        width: 100%;
+        max-width: 990px;
+        table-layout: auto;
+    } */
+    .th-td-style, label{
+        font-family: 'Radio Canada', sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        text-align: left;
+        color: #616161;
+    }
+    
+}

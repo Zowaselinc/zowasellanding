@@ -457,7 +457,7 @@
 }
 
 .itemlist>ul>li{
-    line-height: 3;
+    line-height: 2.5;
     color: rgb(58, 48, 48) !important;
     font-size: 16px;
 }
@@ -880,6 +880,9 @@
 
 
 /* BLOG NEWS END */
+
+
+
 
 
 
