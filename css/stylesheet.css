@@ -5874,8 +5874,16 @@ section.pricing-plans {
 	font-family: var(--poppinsFont) !important;
 }
 
+.defaultFontSize{
+  font-size: var(--normalFont);
+}
+
 .smallFont{
 	font-size: var(--miniFont) !important;
+}
+
+.smSmallFont{
+  font-size: 12px !important;
 }
 
 .small-titlesize-font{
@@ -5962,4 +5970,63 @@ section.pricing-plans {
   border-bottom: 1px solid #ededee;
   padding-bottom: 10px;
   color: #3A3030 !important;
+}
+
+.custom-xs-right-spacing{
+  margin-left: 4%;
+}
+
+.banner-title{
+  position: absolute;
+  top: 280px;
+  width: 80%;
+}
+
+.bg-skyblue{
+  background: #E6F3EC;
+}
+
+.sustainability-truck-bg{
+  background: url(../images/common/gallery/gallery-1.jpg);
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.comparison-section-bg{
+  background: url(../images/common/ag-pic-18.jpg);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative !important;
+}
+
+.white-overlay{
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.318);
+  position: absolute;
+}
+
+.bg-darkblue{
+  background: #262C3F;
+}
+
+.overlap-margin{
+  margin-top: -50px !important;
+  margin-right: -70px !important;
+  z-index: 1000
+}
+
+.choice-filters{
+  font-size: 12px !important;
+  color: #4A4754 !important;
+}
+
+.large-side-padding{
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }

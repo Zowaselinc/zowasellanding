@@ -186,13 +186,15 @@ body{
     margin-bottom: 50px;
 }
 .sustain-texth5{
-     color: #383737 !important;
-
+    color: #6C757D !important;
+    font-size: 1rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .sustain-text{
-    line-height: 1.9;
+    line-height: 1.7;
     color: #383737;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .choices__item{
