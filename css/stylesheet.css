@@ -64,6 +64,7 @@
 	--maxFont: 70px;
 
 	--poppinsFont: 'Poppins', sans-serif;
+  --dark-blue: '#262C3F';
 }
 
 /*====================================================
@@ -1835,10 +1836,6 @@
     font-weight: 400;
   }
 
-  .team-box {
-    margin: 1rem 0rem;
-  }
-
   figure.portrait-layer {
     position: relative;
     overflow: hidden;
@@ -1929,9 +1926,9 @@
     opacity: 0.8;
   }
 
-  figure.portrait-layer a:hover {
+  /* figure.portrait-layer a:hover {
     opacity: 1;
-  }
+  } */
 
   figure.portrait-layer a:hover i {
     width: 40px;
@@ -5862,6 +5859,9 @@ section.pricing-plans {
   display: none;
 }
 
+.light-grey-bg{
+  background: #F1F1F1;
+}
 
 
 /*  */
@@ -5875,7 +5875,7 @@ section.pricing-plans {
 }
 
 .defaultFontSize{
-  font-size: var(--normalFont);
+  font-size: var(--normalFont) !important;
 }
 
 .smallFont{
@@ -5884,6 +5884,10 @@ section.pricing-plans {
 
 .smSmallFont{
   font-size: 12px !important;
+}
+
+.xslarge-titlesize-font{
+  font-size: var(--largeFont) !important;
 }
 
 .small-titlesize-font{
@@ -5942,6 +5946,22 @@ section.pricing-plans {
 .xtrabold{
 	font-weight: 900;
 }
+
+.absolute-x-center{
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.absolute-y-center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
 /* -------------------------- default button style -------------------------- */
 .button-default{
 	font-size: var(--normalFont2);
@@ -5980,6 +6000,10 @@ section.pricing-plans {
   position: absolute;
   top: 280px;
   width: 80%;
+}
+
+.top210{
+  top: 210px !important;
 }
 
 .bg-skyblue{
@@ -6029,4 +6053,87 @@ section.pricing-plans {
 .large-side-padding{
   padding-left: 40px !important;
   padding-right: 40px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    team                                    */
+/* -------------------------------------------------------------------------- */
+.move-to-banner-edge{
+  margin-top: -10%;
+}
+
+.image-container{
+  height: 250px;
+  background-size: cover !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+}
+
+.team-data-bg{
+  background: #E6F7EE;
+}
+
+#ceo{
+  background: url(../images/common/JerryOCHE.png);
+}
+
+#ceo-2{
+  background: url(../images/common/OghenekomeUMUERRI.png);
+  background-size: contain;
+}
+
+#keyaccountmanager{
+  background: url(../images/common/AdesewaAwotundekeyaccountmanager.png);
+}
+
+#headagronomy-northng{
+  background: url(../images/common/gallery/team/AbdulKarimBangura.png);
+}
+
+#headsustainlivelihood{
+  background: url(../images/common/PriscillaCharlesUdoh.png);
+}
+
+#financecreditmanager{
+  background: url(../images/common/EbenezerODUWU.PNG);
+}
+
+#marketplacespecialist{
+  background: url(../images/common/OluwasholaRUFAI.PNG);
+}
+
+#headagronomy-southng{
+  background: url(../images/common/gallery/team/FridayAttahAgbo.png);
+}
+
+#leadsustainabilitynw{
+  background: url(../images/common/gallery/team/OluwapelumiAkanbi.png);
+}
+
+#leadsustainabilitysw{
+  background: url(../images/common/gallery/team/OgunleyeAbelOluwasegun.png);
+}
+
+#strategicadvisor{
+  background: url(../images/common/gallery/team/BabsFagade.png);
+}
+
+#strategicadvisor-2{
+  background: url(../images/common/gallery/team/ChikeNWAGWU.png);
+}
+
+#strategicadvisor-3{
+  background: url(../images/common/gallery/team/JaclynSmith.png);
+}
+
+#strategicadvisor-4{
+  background: url(../images/common/gallery/team/JeffreyChar.png);
+}
+
+#strategicadvisor-5{
+  background: url(../images/common/gallery/team/JeffDYCK.png);
+}
+
+.advisors-tab{
+  background: #05B050;
 }
