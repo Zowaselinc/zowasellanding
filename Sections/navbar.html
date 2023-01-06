@@ -1,0 +1,86 @@
+<div class="container p-01">
+    <a href="index.html" class="navbar-brand"><img src="images/logos/zowasel-logo-grey-614x (1) 1 copy 1 (1).png" alt=""></a>
+
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+        <span class="menu-icon-bar"></span>
+        <span class="menu-icon-bar"></span>
+        <span class="menu-icon-bar"></span>
+    </button>
+
+    <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="dropdown">
+                <a href="Marketplace.html" class="nav-item nav-link" >MARKETPLACE</a>
+            </li>
+            <li><a href="Traceability.html" class="nav-item nav-link">TRACEABILITY</a></li>
+            <li>
+                <a href="Report.html" class="nav-item nav-link">REPORT</a>
+            </li>
+            <li class="dropdown">
+                <a href="Safety.html" class="nav-item nav-link" >SAFETY</a>
+            </li>
+            <li>
+                <a href="Sustainablility.html" class="nav-item nav-link">SUSTAINABILITY</a>
+            </li>
+            <li>
+                <a href="team.html" class="nav-item nav-link">OUR TEAM</a>
+            </li>
+            <!-- <li class="dropdown">
+                <a href="#" class="nav-item nav-link last-link-item">EXPLORE</a>
+                <div class="dropdown-menu">
+                    <a href="about-us.html" class="dropdown-item">About Us</a>
+                    <a href="team.html" class="dropdown-item">Our Team</a>
+                    <a href="blog-right-sidebar.html" class="dropdown-item">Conduct code</a>
+                    <a href="blog-single.html" class="dropdown-item">Offer Team</a>
+                    <a href="contact.html" class="dropdown-item">Contact Us</a>
+                    <a href="#contact" class="dropdown-item">Media</a>
+                    <a href="careers.html" class="dropdown-item">Career</a>
+                   
+
+                </div>
+            </li> -->
+           
+            <li><a href="#" class="nav-item Signup ">SIGN UP</a></li>
+
+            
+        </ul>
+    </div>
+</div>
+<script>
+    jQuery(function($) {
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop() >= 200) {
+            $('.navbar').addClass('fixed-top');
+        } else if ($(this).scrollTop() == 0) {
+            $('.navbar').removeClass('fixed-top');
+        }
+    });
+
+});
+
+// var $dropdown = $(".dropdown");
+// var $dropdownToggle = $(".dropdown-toggle");
+// var $dropdownMenu = $(".dropdown-menu");
+// var showClass = "show";
+
+// $(window).on("load resize", function() {
+//   if (this.matchMedia("(min-width: 768px)").matches) {
+//     $dropdown.hover(
+//       function() {
+//         const $this = $(this);
+//         $this.addClass(showClass);
+//         $this.find($dropdownToggle).attr("aria-expanded", "true");
+//         $this.find($dropdownMenu).addClass(showClass);
+//       },
+//       function() {
+//         const $this = $(this);
+//         $this.removeClass(showClass);
+//         $this.find($dropdownToggle).attr("aria-expanded", "false");
+//         $this.find($dropdownMenu).removeClass(showClass);
+//       }
+//     );
+//   } else {
+//     $dropdown.off("mouseenter mouseleave");
+//   }
+// });
+</script>

@@ -64,7 +64,7 @@
 	--maxFont: 70px;
 
 	--poppinsFont: 'Poppins', sans-serif;
-  --dark-blue: '#262C3F';
+  --dark-blue: #262C3F;
 }
 
 /*====================================================
@@ -291,7 +291,8 @@
   }
 
   .carousel-wrapper{
-    width: 80%;
+    width: 100%;
+    padding: 0 10%;
     margin: auto;
     border-radius: 10px;
     background-color: #fff !important;
@@ -763,13 +764,18 @@
   line-height: 0;
 }
 .dot-style .slick-dots > li.slick-active button {
-  background: #adadb0;
+  /* background: #adadb0; */
+  background-color: var(--main-yellow-color) !important;
+  /* height: 15px; */
+  width: 25px;
+  border-radius: 40px;
 }
 .dot-style .slick-dots button {
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
-  border: 2px solid #adadb0;
+  border: none;
+  background-color: rgba(253, 226, 150, 0.8);
   text-indent: -10000px;
   padding: 0;
 }
@@ -1031,8 +1037,8 @@
     4. FOOTER. 
   ====================================================*/
   footer {
-    background-color: var(--main-dark-color);
-    padding: 4rem 0rem;
+    background-color: #262C3F;
+    padding: 1rem 0 0;
   }
 
   footer h4 {
@@ -1045,6 +1051,10 @@
     color: #cccccc;
     font-size: 15px;
     font-weight: 400;
+  }
+
+  .top-footer{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.145);
   }
 
   .top-footer h4 {
@@ -1185,13 +1195,21 @@
   ====================================================*/
   .pages-hero {
     background-image: url("../images/common/gallery/marketplace.jpg");
-    height: 600px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     position: relative;
   }
 
-  .pages-hero:before {
+  .pages-heros{
+    /* background-image: url("../images/common/gallery/marketplace.jpg"); */
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .pages-hero:before, .pages-heros:before {
     content: '';
     position: absolute;
     top: 0;
@@ -1741,7 +1759,8 @@
     padding: 2rem 1rem;
     border-radius: 5px;
     margin: 1rem 0rem;
-    box-shadow: 0 0 74px rgba(10, 10, 10, 0.07);
+    background-color: #F1F1F1;
+    /* box-shadow: 0 0 74px rgba(10, 10, 10, 0.07); */
     transition: 0.5s;
   }
 
@@ -1751,12 +1770,13 @@
   }
 
   .service-box .sb-icon {
-    width: 60px;
-    margin: auto;
+    width: 120px;
+    padding-left: 40px;
+    padding-top: 40px;
   }
 
   .sb-caption {
-    text-align: center;
+    padding: 20px 40px 40px;
   }
 
   .sb-caption h4 {
@@ -2982,18 +3002,18 @@
     text-transform: uppercase;
     cursor: pointer;
     line-height: 2;
-    padding: 0 25px;
+    padding: 5px 30px;
     position: relative;
     color: var(--main-text-color);
     font-weight: 600;
-    border: solid 2px var(--main-yellow-color);
-    border-radius: 10px;
+    border: solid 2px #05B050;
+    border-radius: 20px;
     margin: 0px 5px;
   }
 
   .filter li.active {
     color: #FFF;
-    background-color: var(--main-yellow-color);
+    background-color: #05B050;
   }
 
   #kehl-grid {
@@ -5338,9 +5358,8 @@ section.pricing-plans {
   }
 
   .testimonial-carousel-alt .owl-dots button.owl-dot.active {
-    background-color: var(--main-yellow-color);
-    width: 15px;
-    border-radius: 50%;
+    /* background-color: var(--main-yellow-color); */
+    background-color: var(--main-yellow-color) !important;
     border: solid 2px var(--main-yellow-color);
   }
 
@@ -5947,6 +5966,10 @@ section.pricing-plans {
 	font-weight: 900;
 }
 
+.light-title{
+  font-weight: 500;
+}
+
 .absolute-x-center{
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -5971,6 +5994,11 @@ section.pricing-plans {
     color:  #fff !important;
 	border-radius: 7px;
 	padding: 13px 22px;
+}
+
+.orange-btn{
+  background: #FAB900;
+  border-radius: 4.03985px;
 }
 
 /* INDEX */
@@ -6046,7 +6074,7 @@ section.pricing-plans {
 }
 
 .choice-filters{
-  font-size: 12px !important;
+  font-size: 14px !important;
   color: #4A4754 !important;
 }
 
@@ -6080,6 +6108,7 @@ section.pricing-plans {
 #ceo-2{
   background: url(../images/common/OghenekomeUMUERRI.png);
   background-size: contain;
+  height: 290px;
 }
 
 #keyaccountmanager{
@@ -6134,6 +6163,87 @@ section.pricing-plans {
   background: url(../images/common/gallery/team/JeffDYCK.png);
 }
 
-.advisors-tab{
+.advisors-tab, .green-bg{
   background: #05B050;
+}
+
+.cursor-pointer{
+  cursor: pointer !important;
+}
+
+
+/* CHOICES COMPARISON */  
+.choices__list--dropdown{
+  z-index: 1001;
+}
+.app-btn{
+  width: 175px;
+  border: 2px solid rgba(255, 255, 255, 0.139);
+  padding: 7px;
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.app-btn img{
+  width: 25px !important;
+}
+
+.app-btn span{
+  color: #f1f1f1;
+  display: inline-block !important;
+  padding-left: 9px;
+}
+
+.offwhite{
+  color: rgba(181, 180, 185, 0.794) !important;
+  padding-top: 3px;
+}
+
+
+.footer-form{
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.footer-form input{
+  width: 260px;
+  border-radius: 0;
+  background: #202536;
+  border-color: #202536;
+}
+
+.footer-form input:focus{
+  background: #202536;
+  outline: none;
+}
+
+.footer-form input::placeholder{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-form button{
+  border: none;
+  padding: 0;
+  background: #4fad5b;
+}
+
+.darker-blue{
+  background: #202536;
+}
+
+.centerBannerContent{
+  font-size: 3.5rem; 
+  color: white; 
+  z-index: 1000; 
+  position: absolute; 
+  text-transform: none; 
+  transform: translate(-50%, 50%); 
+  top: 40%; 
+  left: 50%;
 }

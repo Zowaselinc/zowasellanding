@@ -56,56 +56,10 @@
     <!-- PRELOADER END -->
       
     <header>
-        <!-- NAV START -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container p-01">
-                <a href="index.html" class="navbar-brand"><img src="images/logos/zowasel-logo-grey-614x (1) 1 copy 1 (1).png"
-                        alt=""></a>
-        
-                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
-                    <span class="menu-icon-bar"></span>
-                    <span class="menu-icon-bar"></span>
-                    <span class="menu-icon-bar"></span>
-                </button>
-        
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="dropdown">
-                            <a href="Marketplace.html" class="nav-item nav-link" data-toggle="dropdown">MARKETPLACE</a>
-                        </li>
-                        <li><a href="Traceability.html" class="nav-item nav-link">TRACEABILITY</a></li>
-                        <li class="dropdown">
-                            <a href="Report.html" class="nav-item nav-link" >REPORT</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="Safety.html" class="nav-item nav-link" >SAFETY</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="Sustainablility.html" class="nav-item nav-link">SUSTAINABILITY</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-item nav-link last-link-item">EXPLORE</a>
-                            <div class="dropdown-menu">
-                                <a href="about-us.html" class="dropdown-item">About Us</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="blog-right-sidebar.html" class="dropdown-item">Conduct code</a>
-                                <a href="blog-single.html" class="dropdown-item">Offer Team</a>
-                                <a href="contact.html" class="dropdown-item">Contact Us</a>
-                                <a href="blog-left-sidebar.html" class="dropdown-item">Media</a>
-                                <a href="careers.html" class="dropdown-item">Career</a>
-        
-        
-                            </div>
-                        </li>
-        
-                        <li><a href="about-us.html" class="nav-item Signup">SIGN UP</a></li>
-        
-        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- NAV END -->
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                            TOPBAR COMPONENT                             -->
+        <!-- ----------------------------------------------------------------------- -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="topbar"></nav>
     </header>
     <!-- <div class="header-text">
         <div class="cont">
@@ -115,13 +69,10 @@
         </div>
     </div> -->
 
-    <div class="pages-hero ">
+    <div class="pages-hero position-relative">
         <div class="container">
-            <div class="pages-title">
-                <h1>MarketPlace</h1>
-                <div class="page-nav">
-                    <p><a href="#">Home</a> &nbsp; | &nbsp; <a href="#">MarketPlace</a></p>
-                </div>
+            <div>
+                <h1 class="centerBannerContent"><strong class="xtrabold">MarketPlace</strong> </h1>
             </div>
         </div>  
     </div>
@@ -133,27 +84,16 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="product-desc-layer">
-                        <h3 class="featurette-heading">MARKETPLACE PLATFORM<br /><span
-                                class="light-text text-muted format">Matchmaking and transaction sercurity.</span></h3>
-                        <p class="line-text">
-                        We match buyers and sellers of the same commodity. Our platform connects thousands of crop sellers, with leading crop
-                        buyers locally and internationally.
-                          
-                        
-                        We are enabling buyers and sellers of crops to join our Preferred Network to securely trade with a trusted counterparty.
-                        Buyers and sellers can post, receive bids, negotiate, match, haul, and get paid at the click of a button directly with
-                        one another.
-                        
-                        
-                        You decide on pricing and terms together, Zowasel enforces smart contracts and ensures that all transactions are shipped
-                        and payments are made after delivery without any issues.
+                        <h3 class="small-titlesize-font xtrabold">MARKETPLACE PLATFORM<br /><span
+                                class="light-text text-secondary text-muted format xtrabold">Matchmaking and transaction sercurity.</span></h3>
+                        <p class="line-text pt-3 defaultFontSize">
+                            We match buyers and sellers of the same commodity. Our platform connects thousands of crop sellers, with leading crop buyers locally and internationally. We are enabling buyers and sellers of crops to join our Preferred Network to securely trade with a trusted counterparty. Buyers and sellers can post, receive bids, negotiate, match, haul, and get paid at the click of a button directly with one another. You decide on pricing and terms together, Zowasel enforces smart contracts and ensures that all transactions are shipped and payments are made after delivery without any issues.
                         </p>
-                        <h6><a class="text- btn button btn-outline-white Header-btn" href="blog-single.html">Get Started <i
-                                    class="fa-solid fa-arrow-right"></i></a></h6>
+                        <h6 class="mt-4"><a class="specialBtn-font text-btn button btn-outline-white Header-btn" href="#blog-single.html">Get Started</a></h6>
 
                     </div>
                 </div>
-                <div class="col-lg-5 col-mt-lg ">
+                <div class="col-lg-5 col-mt-lg">
                     <figure class="product-features">
                         <img src="images/common/gallery/mamaseller.jpg" style="border-radius: 10px; box-shadow: 0 2px 2px 2px rgb(82, 81, 81);" alt="">
                     </figure>
@@ -168,9 +108,9 @@
                 </div>
                 <div class="order-first order-md-9 col-lg-7">
                     <div class="product-desc-layer">
-                        <h3 class="featurette-heading "  >Wide Selection <br /><span
-                                class="light-text text-muted format" >A vast network verified buyers and sellers.</span></h3>
-                        <p class="line-text">
+                        <h3 class="small-titlesize-font xtrabold">Wide Selection <br /><span
+                                class="light-text text-secondary text-muted format" >A vast network verified buyers and sellers.</span></h3>
+                        <p class="line-text pt-2 defaultFontSize">
                             Wide Selection
                             A vast network verified buyers and sellers
                             
@@ -183,19 +123,20 @@
                             We ensure our customers get high-quality crops by providing sourcing assurance, quality testing, and control services to
                             our marketplace sellers and buyers through our Crop Test Centers and network of trained Trustees nationwide.
                         </p>
-                        <h6><a class="text- btn button btn-outline-white Header-btn" href="blog-single.html">Get Started <i
-                                    class="fa-solid fa-arrow-right"></i></a></h6>
+                        <h6 class="mt-4"><a class="specialBtn-font text-btn button btn-outline-white Header-btn" href="#blog-single.html">Get Started </a></h6>
 
                     </div>
                 </div>
             </div>
-            <hr class="product-divider divider-list ">
+            <hr class="product-divider divider-list">
             <div class="row col-mt-lg ">
                 <div class="col-lg-7">
                     <div class="product-desc-layer">
-                        <h3 class="featurette-heading">Longterm relationships <br /><span
-                                class="light-text text-muted format">Better returns = more profitability.</span></h3>
-                        <p class="line-text">
+                        <h3 class="small-titlesize-font xtrabold">
+                            Longterm relationships <br />
+                            <span class="light-text text-secondary text-muted format">Better returns = more profitability.</span>
+                        </h3>
+                        <p class="line-text pt-2 defaultFontSize">
                             We aim to create season-long relationships between growers and buyers that last for many years. From our
                             boots-on-the-farm, our Crop Test Centers, and field operation expertise, we ensure the fulfillment of a successful first
                             season.
@@ -205,8 +146,9 @@
                             
                             Get introductions from our network at no cost
                         </p>
-                        <h6><a class="text- btn button btn-outline-white Header-btn" href="blog-single.html">Get Started <i
-                                    class="fa-solid fa-arrow-right"></i></a></h6>
+                        <h6 class="mt-4">
+                            <a class="specialBtn-font text-btn button btn-outline-white Header-btn" href="#blog-single.html">Get Started </a>
+                        </h6>
 
                     </div>
                 </div>
@@ -222,98 +164,7 @@
     <!-- CONTENT END -->
     
     <!-- FOOTER START -->
-    <footer>
-        <div class="container">
-            <div class="top-footer">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>bright nature <span class="light-text">of decision</span></h4>
-                        <p>Bringing growth, ingenuity, and experience to market.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="footer-btns">
-                            <a href="contact.html" class="btn button btn-white">Contact Us</a>
-                            <a href="about-us.html" class="btn button">About US</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="hr-divider">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="footer-col">
-                        <figure class="footer-logo">
-                            <img src="images/logos/zowasel-logo.png" alt="">
-                        </figure>
-                        <p class="footer-desc">Helping farmers to emerging markets maximize their profits. We use agronomic
-                            machine learning, remote sensing, and mobile phones to deliver financing, farm products, and
-                            customized advice to smallholder.
-                        </p>
-                        <ul class="bottom-social">
-                            <li><a href="https://web.facebook.com/zowasel/?_rdc=1&_rdr" target="_blank"><i
-                                        class="fab fa-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/zowasel/?hl=en" target="_blank"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/zowasel/?originalSubdomain=ng" target="_blank"><i
-                                        class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/zowasel?lang=en" target="_blank"><i
-                                        class="fab fa-twitter-square"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-mt-lg">
-                    <div class="footer-col">
-                        <h5>Quick Links</h5>
-                        <ul class="footer-bulletlist">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="blog-grid.html">Blogs</a></li>
-                            <li><a href="gallery-three-columns.html">Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-mt-lg">
-                    <div class="footer-col">
-                        <h5>About</h5>
-                        <ul class="footer-bulletlist">
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-mt-lg">
-                    <div class="footer-col">
-                        <h5>Company</h5>
-                        <ul class="footer-bulletlist">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="hr-divider">
-            <div class="bottom-footer">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="copyright">
-                            <p>© 2022 <strong>Zowasel</strong> all rights reserved</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-align">
-                        <ul class="bf-right">
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
     <!-- FOOTER END -->
     
     <!--SCROLL TOP START-->
@@ -327,6 +178,7 @@
     <script src='js/lib/flickity.pkgd.min.js'></script>
     <script src='js/lib/nav-fixed-top.js'></script>
     <script src='js/main.js'></script>
+    <script src='js/script.js'></script>
     <!-- JAVASCRIPTS END -->
     
     </body>

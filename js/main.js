@@ -235,15 +235,15 @@ function scroll_top() {
        ],
        navContainer: '.news-carousel .custom-nav',
        responsive: {
-           0: {
+            0: {
                items: 1
-           },
-           767: {
-               items: 1
-           },
-           1000: {
-               items: 3
-           }
+            },
+            767: {
+                items: 1
+            },
+            1000: {
+                items: 3
+            }
        }
    });
 
@@ -960,3 +960,182 @@ $(function () {
   })
 
 }(jQuery);
+
+
+// DIRTY Responsive pricing table JS
+
+$( "ul" ).on( "click", "li", function() {
+    var pos = $(this).index()+2;
+    $("tr").find('td:not(:eq(0))').hide();
+    $('td:nth-child('+pos+')').css('display','table-cell');
+    $("tr").find('th:not(:eq(0))').hide();
+    $('li').removeClass('active');
+    $(this).addClass('active');
+  });
+  
+  // Initialize the media query
+    var mediaQuery = window.matchMedia('(min-width: 640px)');
+    
+    // Add a listen event
+    mediaQuery.addEventListener('load', doSomething);
+    
+    // Function to do something with the media query
+    function doSomething(mediaQuery) {    
+      if (mediaQuery.matches) {
+        $('.sep').attr('colspan',5);
+        $('td').attr('colspan',5);
+      } else {
+        $('.sep').attr('colspan',2);
+        $('').attr('colspan',5);
+      }
+    }
+    
+    // On load
+    doSomething(mediaQuery);
+
+
+// /* -------------------------------------------------------------------------- */
+// /*                             the companies data                             */
+// /* -------------------------------------------------------------------------- */
+// const companies = [
+//     {
+//         "SUSTAINABILTY ISSUES ADDRESSED":{
+//             "Rainforest Alliance": {
+//                 "Water": 1,
+//                 "Farmer livelihood": 0,
+//                 "Natural resources": 1,
+//                 "Climate change": 1,
+//                 "Preserving biodiversity": 1
+//             },
+//             "Cargil Cocoa Promise": {
+//                 "Water": 1,
+//                 "Farmer livelihood": 0,
+//                 "Natural resources": 1,
+//                 "Climate change": 0,
+//                 "Preserving biodiversity": 1
+//             },
+//             "Zowasel Sustainability": {
+//                 "Water": 0,
+//                 "Farmer livelihood": 1,
+//                 "Natural resources": 1,
+//                 "Climate change": 1,
+//                 "Preserving biodiversity": 1
+//             },
+//             "Fairtrade": {
+//                 "Water": 0,
+//                 "Farmer livelihood": 1,
+//                 "Natural resources": 1,
+//                 "Climate change": 1,
+//                 "Preserving biodiversity": 1
+//             },
+//             "Cocoa Horizons": {
+//                 "Water": 0,
+//                 "Farmer livelihood": 1,
+//                 "Natural resources": 1,
+//                 "Climate change": 1,
+//                 "Preserving biodiversity": 1
+//             },
+//             "Nestle Innovative Income Accelerator Program": {
+//                 "Water": 0,
+//                 "Farmer livelihood": 1,
+//                 "Natural resources": 1,
+//                 "Climate change": 1,
+//                 "Preserving biodiversity": 1
+//             }
+//         },
+//         "VALUE DRIVERS": {
+//             "Rainforest Alliance": {
+//                 "Create new products": 1,
+//                 "Cost reduction and process improvement": 0,
+//                 "New supplier relationship": 1,
+//                 "Improve downstream product preference": 1,
+//                 "Improve brand value and reputation": 1,
+//                 "Improve risk management": 1,
+//                 "Leverage public partnership and funding": 0,
+//                 "Provide firm with opportunity to globally operate": 1
+//             },
+//             "Cargil Cocoa Promise": {
+//                 "Create new products": 1,
+//                 "Cost reduction and process improvement": 0,
+//                 "New supplier relationship": 1,
+//                 "Improve downstream product preference": 0,
+//                 "Improve brand value and reputation": 1,
+//                 "Improve risk management": 1,
+//                 "Leverage public partnership and funding": 1,
+//                 "Provide firm with opportunity to globally operate": 1
+//             },
+//             "Zowasel Sustainability": {
+//                 "Create new products": 0,
+//                 "Cost reduction and process improvement": 0,
+//                 "New supplier relationship": 1,
+//                 "Improve downstream product preference": 1,
+//                 "Improve brand value and reputation": 0,
+//                 "Improve risk management": 1,
+//                 "Leverage public partnership and funding": 0,
+//                 "Provide firm with opportunity to globally operate": 1
+//             },
+//             "Fairtrade": {
+//                 "Create new products": 1,
+//                 "Cost reduction and process improvement": 1,
+//                 "New supplier relationship": 1,
+//                 "Improve downstream product preference": 1,
+//                 "Improve brand value and reputation": 1,
+//                 "Improve risk management": 1,
+//                 "Leverage public partnership and funding": 1,
+//                 "Provide firm with opportunity to globally operate": 1
+//             },
+//             "Cocoa Horizons": {
+//                 "Create new products": 1,
+//                 "Cost reduction and process improvement": 0,
+//                 "New supplier relationship": 0,
+//                 "Improve downstream product preference": 1,
+//                 "Improve brand value and reputation": 1,
+//                 "Improve risk management": 1,
+//                 "Leverage public partnership and funding": 0,
+//                 "Provide firm with opportunity to globally operate": 1
+//             },
+//             "Nestle Innovative Income Accelerator Program": {
+//                 "Create new products": 1,
+//                 "Cost reduction and process improvement": 1,
+//                 "New supplier relationship": 1,
+//                 "Improve downstream product preference": 0,
+//                 "Improve brand value and reputation": 1,
+//                 "Improve risk management": 1,
+//                 "Leverage public partnership and funding": 1,
+//                 "Provide firm with opportunity to globally operate": 1
+//             }
+//         },
+//         "PREMIUM DISTRIBUTION": {
+//             "Farmer": 0,
+//             "Farmer group": 1,
+//             "Productivity": 1,
+//             "Community": 1,
+//             "Environment": 1,
+//             "Administrative": 0
+//         },
+//         "VALUE CHAIN FOCUS": {
+//             "Production": 1,
+//             "Manufacuring": 0,
+//             "Distribution": 0,
+//             "Consumption": 1
+//         }
+//     }
+// ]
+
+// const compareall = () => {
+//     let selectedCompanies = document.querySelector('#choices-multiple-remove-button').children;
+//     let listofSelectedCompanies = [];
+
+//     if(selectedCompanies.length > 0){
+//         for(let i = 0; i < selectedCompanies.length; i++){
+//             listofSelectedCompanies.push(selectedCompanies[i].textContent)
+//             // console.log(selectedCompanies[i].textContent)
+//         }
+    
+//         console.log(listofSelectedCompanies)
+//     }else{
+//         alert("Please select companies to compare");
+//     }
+// }
+
+// $('#makeComparison').click(compareall);

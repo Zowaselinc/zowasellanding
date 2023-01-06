@@ -200,15 +200,10 @@ body{
 .choices__item{
     background-color: #499b49 !important;
     color: #ffffff;
-    font-family: 'Radio Canada', sans-serif !important;
-    font-size: 18px !important;
-   
 }
-.choices__item:hover{
-    background-color: #EEC344 !important;
-    color: #ffffff;
-    font-family: 'Radio Canada', sans-serif !important;
-    font-size: 18px !important;
+
+.choices__item--choice:hover{
+    background: rgba(73, 155, 73, 0.827) !important;
 }
 
 

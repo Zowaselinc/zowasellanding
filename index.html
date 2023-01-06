@@ -67,53 +67,10 @@
       
     <header>
         <!-- NAV START -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container p-01">
-                <a href="index.html" class="navbar-brand"><img src="images/logos/zowasel-logo-grey-614x (1) 1 copy 1 (1).png" alt=""></a>
-
-                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
-                    <span class="menu-icon-bar"></span>
-                    <span class="menu-icon-bar"></span>
-                    <span class="menu-icon-bar"></span>
-                </button>
-
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="dropdown">
-                            <a href="Marketplace.html" class="nav-item nav-link" >MARKETPLACE</a>
-                        </li>
-                        <li><a href="Traceability.html" class="nav-item nav-link">TRACEABILITY</a></li>
-                        <li class="dropdown">
-                            <a href="Report.html" class="nav-item nav-link" data-toggle="dropdown">REPORT</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="Safety.html" class="nav-item nav-link" >SAFETY</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="Sustainablility.html" class="nav-item nav-link">SUSTAINABILITY</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="nav-item nav-link last-link-item">EXPLORE</a>
-                            <div class="dropdown-menu">
-                                <a href="about-us.html" class="dropdown-item">About Us</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="blog-right-sidebar.html" class="dropdown-item">Conduct code</a>
-                                <a href="blog-single.html" class="dropdown-item">Offer Team</a>
-                                <a href="contact.html" class="dropdown-item">Contact Us</a>
-                                <a href="#contact" class="dropdown-item">Media</a>
-                                <a href="careers.html" class="dropdown-item">Career</a>
-                               
-
-                            </div>
-                        </li>
-                       
-                        <li><a href="about-us.html" class="nav-item Signup ">SIGN UP</a></li>
-
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                            TOPBAR COMPONENT                             -->
+        <!-- ----------------------------------------------------------------------- -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="topbar"></nav>
         <!-- NAV END -->
 
         <!--SLIDER START-->
@@ -356,94 +313,93 @@
     <section>
 
         <!-- POPUP PARALLAX START -->
-        <div id="Start-para" class="popup-parallax ">
-            <div class="parallax-content ">
-                <a class="popup-youtube" href="https://www.youtube.com/watch?v=JZ5CqBsg_hU">
+        <div id="Start-para" class="p-5 green-bg">
+            <div class="col-md-10 pt-5 pb-3 col-12 mx-md-auto text-center text-white">
+                <a class="popup-youtube d-block" href="https://www.youtube.com/watch?v=JZ5CqBsg_hU">
                     <div class="pulse"><i class="fas fa-play"></i></div>
                 </a>
-                <h2>Providing the finest products <br /> <span class="light-text">to the best feed suppliers.</span>
+                <h2 class="text-white" style="margin: 60px 0 25px">Providing the finest products <br /> <span class="light-text">to the best feed suppliers.</span>
                 </h2>
-                <p>Helping farmers to emerging markets maximize their profits. <br />We use agronomic machine learning,
-                    remote sensing, and mobile phones.</p>
-                <div class="parallax-btn">
-                    <a href="contact.html" class="btn button btn-white">Schedule a Demo <i class="fa-solid fa-arrow-right"></i></a>
-                    <!-- <a href="blog-left-sidebar.html" class="btn button">Zowasel's  Media <i class="fa-solid fa-arrow-right"></i></a> -->
+                <p class="text-white mb-2">Helping farmers to emerging markets maximize their profits.</p>
+                <p class="text-white mb-4">We use agronomic machine learning, remote sensing, and mobile phones.</p>
+                <div>
+                    <a href="contact.html" class="button-default text-white orange-btn">Schedule a Demo</a>
                 </div>
             </div>
         </div>
         <!-- POPUP PARALLAX END -->
 
         <!-- ZOWASEL SERVICE-->
-        <div class="container mt-5 mb-5">
-            <div class="layer-title text-center">
-                <h2>Zowasel <span class="light-text">Services</span></h2>
-                <p>We specialise in intelligent & effective Search and believes in the power of <br /> partnerships to
+        <div class="container bg-white mt-5 mb-5">
+            <div class="layer-title text-center mb-4">
+                <h2 class="mb-3">Zowasel <span class="light-text">Services</span></h2>
+                <p class="mb-3">We specialise in intelligent & effective Search and believes in the power of <br /> partnerships to
                     grow business. We are committed to helping our customers succeed!.</p>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 increase">
-                        <div class="service-box" onclick="location.href='index.html';" style="cursor: pointer;">
-                            <figure class="sb-icon">
-                                <img src="images/svg/market place.svg" alt="">
-                            </figure>
-                            <div class="sb-caption">
-                                <h4>Marketplace</h4>
-                                <p>Increase your productivity and profitability, from your harvest.</p>
-                            </div>
-                        </div>    
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-box cursor-pointer" onclick="location.href='index.html';">
+                        <figure class="sb-icon">
+                            <img src="images/icons/Group3410.png" alt="">
+                        </figure>
+                        <div class="sb-caption">
+                            <h4>Marketplace</h4>
+                            <p class="defaultFontSize">Increase your productivity and profitability, from your harvest.</p>
+                        </div>
+                    </div>    
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-box" onclick="location.href='Traceability.html';" style="cursor: pointer;">
+                    <div class="service-box cursor-pointer" onclick="location.href='Traceability.html';">
                         <figure class="sb-icon">
-                            <img src="images/svg/railway-track-svgrepo-com (1).svg" alt="">
+                            <img src="images/icons/Group3357.png" alt="">
                         </figure>
                         <div class="sb-caption">
                             <h4>Traceability</h4>
-                            <p>Track your sustainability journey using data-driven insights.</p>
+                            <p class="defaultFontSize">Track your sustainability journey using data-driven insights.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-box " onclick="location.href='Report.html';" style="cursor: pointer;"  >
+                    <div class="service-box " o cursor-pointernclick="location.href='Report.html';"  >
                         <figure class="sb-icon">
-                            <img src="images/svg/marketreport.svg" alt="" >
+                            <img src="images/icons/Group3357-1.png" alt="" >
                         </figure>
                         <div class="sb-caption">
                             <h4>Market Report</h4>
-                            <p>Save time and money, Connect with our network of vetted growers.</p>
+                            <p class="defaultFontSize">Save time and money, Connect with our network of vetted growers.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 ">
-                    <div class="service-box"   onclick="location.href='Traceability.html';" style="cursor: pointer;">
+                    <div class="service-box cursor-pointer"   onclick="location.href='Traceability.html';">
                         <figure class="sb-icon">
-                            <img src="images/svg/phone-svgrepo-com.svg" alt="">
+                            <img src="images/icons/Group3357-2.png" alt="">
                         </figure>
                         <div class="sb-caption">
                             <h4>Agronomy Support</h4>
-                            <p>Free agronomy services to improve your crop quality.</p>
+                            <p class="defaultFontSize">Free agronomy services to improve your crop quality.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-box" onclick="location.href='about-us.html';" style="cursor: pointer;" >
+                    <div class="service-box cursor-pointer" onclick="location.href='about-us.html';" >
                         <figure class="sb-icon">
-                            <img src="images/svg/cash-svgrepo-com.svg" alt="">
+                            <img src="images/icons/Group3357-3.png" alt="">
                         </figure>
                         <div class="sb-caption">
                             <h4>Credit Scoring</h4>
-                            <p>Build your creditworthiness to access financing from our partners</p>
+                            <p class="defaultFontSize">Build your creditworthiness to access financing from our partners</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="service-box"  onclick="location.href='Safety.html';" style="cursor: pointer;">
+                    <div class="service-box cursor-pointer"  onclick="location.href='Safety.html';">
                         <figure class="sb-icon">
-                            <img src="images/svg/farm-svgrepo-comyuyuyuyu.svg" class="mr-3" alt="...">
+                            <img src="images/icons/Group3357-4.png" class="mr-3" alt="...">
                         </figure>
                         <div class="sb-caption">
                             <h4>AgFinance</h4>
-                            <p>Our Mission is to fight aganist Zero Hunger and create plans for our client</p>
+                            <p class="defaultFontSize">Our Mission is to fight aganist Zero Hunger and create plans for our client</p>
                         </div>
                     </div>
                 </div>
@@ -455,7 +411,7 @@
        
     
         <!-- WIDE CAROUSEL START -->
-        <div class="carousel-wrapper mt-5 mb-5 "  style="margin-top: 0rem !important; ">
+        <div class="carousel-wrapper comparison-section-bg mt-5"  style="margin-top: 0rem !important; ">
             <div class="wide-slider-layer">
                 <div class="services-data owl-carousel owl-theme">
                     <div class="item">
@@ -472,7 +428,7 @@
                                         Growers and merchants are looking for
                                         a modern way to interact and sell grain to their preferred buyers.</p>
                                     <h6><a class="text- btn button btn-outline-white Header-btn" href="blog-single.html">Join
-                                            our MarketPlace <i class="fa-solid fa-arrow-right"></i></a></h6>
+                                            our MarketPlace </a></h6>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -868,93 +824,7 @@
     <!-- CONTENT END -->
     
     <!-- FOOTER START -->
-    <footer>
-        <div class="container">
-            <div class="top-footer">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>bright nature  <span class="light-text">of decision</span></h4>
-                        <p>Bringing growth, ingenuity, and experience to market.</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="footer-btns">
-                            <a href="contact.html" class="btn button btn-white">Contact Us</a> 
-                            <a href="about-us.html" class="btn button">About Us</a> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="hr-divider">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="footer-col">
-                        <figure class="footer-logo">
-                            <img src="images/logos/zowasel-logo.png" alt="">
-                        </figure>
-                        <p class="footer-desc">Helping farmers to emerging markets maximize their profits. We use agronomic 
-                            machine learning, remote sensing, and mobile phones to deliver financing, farm products, and customized advice to smallholder.
-                        </p>
-                        <ul class="bottom-social">
-                            <li><a href="https://web.facebook.com/zowasel/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="https://www.instagram.com/zowasel/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/zowasel/?originalSubdomain=ng" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="https://twitter.com/zowasel?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-mt-lg">
-                    <div class="footer-col">
-                        <h5>Quick Links</h5>
-                        <ul class="footer-bulletlist">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="blog-grid.html">Blogs</a></li>
-                            <li><a href="gallery-three-columns.html">Gallery</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-mt-lg">
-                    <div class="footer-col">
-                        <h5>About</h5>
-                        <ul class="footer-bulletlist">
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="careers.html">Careers</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-mt-lg">
-                    <div class="footer-col">
-                        <h5>Company</h5>
-                        <ul class="footer-bulletlist">
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="hr-divider">
-            <div class="bottom-footer">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="copyright">
-                            <p>© 2022 <strong>Zowasel</strong> all rights reserved</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-align">
-                        <ul class="bf-right">
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer"></footer>
     <!-- FOOTER END -->
     
     <!--SCROLL TOP START-->
@@ -962,11 +832,11 @@
     <!--SCROLL TOP START-->
 
     <!-- JAVASCRIPTS -->
-    <!-- <script src='js/lib/jquery-3.5.1.min.js'></script> -->
+    <script src='js/lib/jquery-3.5.1.min.js'></script>
     <script src='js/lib/plugins.js'></script>
     <script src='js/lib/bootstrap.min.js'></script>
-    <script src='js/lib/flickity.pkgd.min.js'></script>
-    <script src='js/lib/nav-fixed-top.js'></script>
+    <!-- <script src='js/lib/flickity.pkgd.min.js'></script> -->
+    <!-- <script src='js/lib/nav-fixed-top.js'></script> -->
     <script src='js/lib/aos.min.js'></script>
     <script src='js/lib/owl.carousel.min.js'></script>
     <script src='js/lib/world-map.min.js'></script>
@@ -974,43 +844,33 @@
     <script src='js/slider.js'></script>
     <!-- JAVASCRIPTS END -->
     <script>
+        // get all zowasel benefit buttons and associated information
+        let benefitBtns = document.querySelectorAll(".zowa-benefits");
+        let benefitDetails = document.querySelectorAll(".zowa-benefits-details");
+
+        // remove the hide class from the first benefit content by default
+        const hideAllBenefitContent = () => {
+            for (let i = 0; i < benefitDetails.length; i++) {
+                benefitDetails[i].classList.add("d-none");
+            }
+        };
+        hideAllBenefitContent();
+
+        benefitDetails[0].classList.remove("d-none");
+        // make the details of the clicked benefit button visible
+        for (let i = 0; i < benefitBtns.length; i++) {
+            benefitBtns[i].addEventListener("click", () => {
+                hideAllBenefitContent();
+                benefitDetails[i].classList.remove("d-none");
+            });
+        }
+
+        
         $(".slider").owlCarousel({
             loop: true,
             autoplay: true,
             autoplayTimeout: 5000, //5000ms = 5s;
             autoplayHoverPause: true,
-        });
-    </script>
-
-    <script>
-        var swiper = new Swiper(".slide-content", {
-            slidesPerView: 3,
-            spaceBetween: 25,
-            loop: true,
-            centerSlide: 'true',
-            fade: 'true',
-            grabCursor: 'true',
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                520: {
-                    slidesPerView: 2,
-                },
-                950: {
-                    slidesPerView: 3,
-                },
-            },
         });
     </script>
         <script type="text/javascript">

@@ -9,10 +9,10 @@ jQuery(function($) {
 
 });
 
-const $dropdown = $(".dropdown");
-const $dropdownToggle = $(".dropdown-toggle");
-const $dropdownMenu = $(".dropdown-menu");
-const showClass = "show";
+var $dropdown = $(".dropdown");
+var $dropdownToggle = $(".dropdown-toggle");
+var $dropdownMenu = $(".dropdown-menu");
+var showClass = "show";
 
 $(window).on("load resize", function() {
   if (this.matchMedia("(min-width: 768px)").matches) {
